@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ts-server-watch": "tsc -p tsconfig.server.json --noEmit --watch",
+    "ts-client-watch": "tsc -p tsconfig.client.json --noEmit --watch"
   },
   "author": "",
   "license": "ISC",
