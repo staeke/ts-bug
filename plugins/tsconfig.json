@@ -1,0 +1,12 @@
+{
+  // This file provides typings for client files to include lib: dom
+  // "include" section makes tools like IDEA continue up and find server tsconfig for server files
+  "extends": "../tsconfig.client.json",
+  "include": [
+    // We need to repeat this for IDEA to bypass this file for server files
+    "**/*.client.ts",
+    "**/*.client.tsx",
+    "**/client/**/*.ts",
+    "**/client/**/*.tsx"
+  ]
+}

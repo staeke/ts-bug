@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    // We choose to type check everything valid, even if it's not technically referenced
+    "**/*.server.ts",
+    "**/server/**/*.ts"
+  ]
+}

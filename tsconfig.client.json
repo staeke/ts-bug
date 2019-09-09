@@ -1,0 +1,33 @@
+{
+  // This file provides typings for client files to include lib: dom
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "paths": {
+      "cms/*": ["cms/*"],
+      "plugins/*": ["plugins/*"]
+    }
+  },
+  "include": [
+    "**/*.client.ts",
+    "**/*.client.tsx",
+    "**/client/**/*.ts",
+    "**/client/**/*.tsx"
+  ],
+  "exclude": [
+    "**/*.server.ts",
+    "**/server/**/*.ts"
+  ]
+}

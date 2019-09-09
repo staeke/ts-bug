@@ -1,0 +1,30 @@
+{
+  // This file serves as the tsconfig for NON-CLIENT files. For client files, please add tsconfig files in
+  // subdirectories including lib: dom
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": [
+      "esnext"
+    ],
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "paths": {
+      "cms/*": ["cms/*"],
+      "plugins/*": ["plugins/*"]
+    }
+  },
+  "exclude": [
+    // We need to exclude files to get separate tsconfigs for those
+    "**/*.client.ts",
+    "**/*.client.tsx",
+    "**/client/**/*.ts",
+    "**/client/**/*.tsx"
+  ]
+}
